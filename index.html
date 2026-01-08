@@ -3,91 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bae, sorry</title>
+  <title>Bae — From the Heart</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg" aria-hidden="true">
-    <div class="gradient"></div>
-    <svg class="waves" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="rgba(255,255,255,0.85)" d="M0,224L48,197.3C96,171,192,117,288,112C384,107,480,149,576,170.7C672,192,768,192,864,176C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-    </svg>
+  <div class="fs-slider">
+    <div class="fs-slides" id="slidesFull">
+      <!-- Slide 1 -->
+      <section class="fs-slide" style="--bg:url('https://images.unsplash.com/photo-1574158622682-e40e69881006?w=1600')">
+        <div class="fs-overlay">
+          <div class="fs-content">
+            <h1>Bae, I’m sorry</h1>
+            <p>I’m not here with excuses. I’m here with honesty, ownership, and patience — the way you deserve to be treated.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Slide 2 -->
+      <section class="fs-slide" style="--bg:url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1600')">
+        <div class="fs-overlay">
+          <div class="fs-content">
+            <h1>I hurt you</h1>
+            <p>Your feelings matter more than being right. I see the impact, and I accept the responsibility without minimizing it.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Slide 3 -->
+      <section class="fs-slide" style="--bg:url('https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=1600')">
+        <div class="fs-overlay">
+          <div class="fs-content">
+            <h1>No excuses</h1>
+            <p>Explaining isn’t justifying. I listened to my impulse instead of you. That ends here — with practice, not promises.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Slide 4 -->
+      <section class="fs-slide" style="--bg:url('https://images.unsplash.com/photo-1595433562696-19bcb47f26b8?w=1600')">
+        <div class="fs-overlay">
+          <div class="fs-content">
+            <h1>How I see you</h1>
+            <p>Poised. Grounded. Effortless. You don’t demand respect — your presence earns it. A queen without the noise.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Slide 5 -->
+      <section class="fs-slide" style="--bg:url('https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?w=1600')">
+        <div class="fs-overlay">
+          <div class="fs-content">
+            <h1>What changes</h1>
+            <p>Listen first, respond second. Ask instead of assume. Show up consistently — with actions that match words.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Slide 6 (Heart) -->
+      <section class="fs-slide" style="--bg:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1600')">
+        <div class="fs-overlay">
+          <div class="fs-content">
+            <div class="heart" aria-label="heart" title="heart"></div>
+            <h1>Whenever you’re ready</h1>
+            <p>I’ll be here to listen — patiently, openly, and with love.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <button class="fs-arrow left" id="prevFull" aria-label="Previous">&#10094;</button>
+    <button class="fs-arrow right" id="nextFull" aria-label="Next">&#10095;</button>
+    <div class="fs-dots" id="dotsFull" aria-label="Slide navigation"></div>
   </div>
-
-  <main class="container" role="main">
-    <header class="header">
-      <h1>Bae, sorry</h1>
-      <p class="subtitle">Please allow me a minute to explain — with cats.</p>
-    </header>
-
-    <section class="slider" aria-live="polite">
-      <div class="slides" id="slides">
-        <article class="slide focus" data-type="text">
-          <h2>1. Owning my mistake</h2>
-          <p>I misjudged the situation and made choices that hurt you. That impact is on me, and I'm not going to minimize it or make excuses.</p>
-        </article>
-
-        <article class="slide" data-type="image">
-          <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=1600&auto=format&fit=crop" alt="Cute cat looking apologetic" />
-          <p class="caption">If sorry had a face, it might look like this.</p>
-        </article>
-
-        <article class="slide" data-type="text">
-          <h2>2. The why (not an excuse)</h2>
-          <p>I reacted quickly instead of thoughtfully. That's a pattern I'm working to change. Understanding the why helps me fix it for real.</p>
-        </article>
-
-        <article class="slide" data-type="image">
-          <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1600&auto=format&fit=crop" alt="Playful kitten" />
-          <p class="caption">A playful pause for perspective.</p>
-        </article>
-
-        <article class="slide" data-type="text">
-          <h2>3. The impact matters</h2>
-          <p>Your feelings are valid. I recognize the trust that was strained, and I'm committed to rebuilding it patiently and consistently.</p>
-        </article>
-
-        <article class="slide" data-type="image">
-          <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=1600&auto=format&fit=crop" alt="Cat with big eyes" />
-          <p class="caption">Big eyes, bigger apologies.</p>
-        </article>
-
-        <article class="slide" data-type="text">
-          <h2>4. My plan forward</h2>
-          <ul>
-            <li>Listen first, respond second.</li>
-            <li>Check in instead of assuming.</li>
-            <li>Be accountable and transparent.</li>
-          </ul>
-          <p>Not promises—practices I'll follow.</p>
-        </article>
-
-        <article class="slide" data-type="text">
-          <h2>5. Thank you for your patience</h2>
-          <p>I value you and our bond. If you're willing, I'd like to talk when you're ready.</p>
-        </article>
-      </div>
-
-      <div class="controls">
-        <button id="prevBtn" aria-label="Previous slide" title="Previous">&lt;</button>
-        <div class="dots" id="dots" role="tablist" aria-label="Slide navigation"></div>
-        <button id="nextBtn" aria-label="Next slide" title="Next">&gt;</button>
-      </div>
-
-      <div class="progress" aria-hidden="true">
-        <div class="bar" id="progressBar"></div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p>Made with sincerity and a splash of ocean breeze.</p>
-    </footer>
-  </main>
-
-  <div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
   <script src="script.js"></script>
 </body>
